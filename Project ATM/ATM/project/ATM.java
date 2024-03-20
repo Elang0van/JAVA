@@ -55,7 +55,7 @@ public class ATM {
                           bank.withdraw(withdrawAmount);
                         } catch (SQLException e) {
                     
-                          System.out.println("DON'T ENTER CHARECTERS");
+                          System.out.println("TRY AGAIN");
                         }
                         catch(InputMismatchException ie){
                                System.out.println("DON'T ENTER CHARECTERS");
@@ -68,7 +68,7 @@ public class ATM {
                           bank.deposit(depositAmount);
                         } catch (SQLException e) {
                           
-                          System.out.println("DON'T ENTER CHARECTERS");
+                          System.out.println("TRY AGAIN");
                         }
                         catch (InputMismatchException ie) {
                           System.out.println("DON'T ENTER CHARECTERS");
@@ -76,7 +76,6 @@ public class ATM {
                             break;
                         case "4":
                             System.out.print("ENTER YOUR OLD PIN: ");
-                            // You need to write code here to handle changing the PIN
                             break;
                         case "5":
                             System.out.println("Exiting...");
