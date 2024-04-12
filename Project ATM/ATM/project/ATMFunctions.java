@@ -65,8 +65,19 @@ public void deposit(double amount) throws SQLException {
             int rowsAffected = ps.executeUpdate();
             if (rowsAffected <= 0) {
               System.out.println("not update");
-                throw new SQLException("Failed to update balance");
 
             }
+        }
+        public void pinChange(int id,int pn) throws SQLException{
+          String query="UPDATE holders SET pin='"+pn+"' WHERE id='"+id+"' ";
+          Connection con = DBconnection.Getconnection();
+          Statement st=con.createStatement();
+          int row = st.executeUpdate(query);
+          if(row>0){
+            System.out.println("PIN CHANGE SUCCESSFULLY");
+          }
+          else{
+            System.out.println("pin not change ");
+          }
         }
 }
