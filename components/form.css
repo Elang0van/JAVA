@@ -1,0 +1,72 @@
+/* Styling the container */
+div {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+/* Styling the form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling the labels */
+label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Styling the input fields */
+input[type="text"],
+input[type="phone"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Adding focus effect on input fields */
+input[type="text"]:focus,
+input[type="phone"]:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Styling the submit button */
+input[type="button"] {
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the submit button */
+input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+/* Ensuring responsive design */
+@media (max-width: 500px) {
+    div {
+        padding: 15px;
+    }
+    input[type="text"],
+    input[type="phone"] {
+        font-size: 14px;
+    }
+    input[type="button"] { 
+        font-size: 14px;
+    }
+}
